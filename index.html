@@ -2,29 +2,98 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>모바일 명함</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.KCHI가 디자인합니다.</title>
     <style>
         body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f5f5f5;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        .card-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 30px 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .logo-box {
+            background-color: #1b4d3e; /* 브랜드 컬러 */
+            color: white;
+            padding: 30px 10px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+        .logo-box h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+        .logo-box p {
+            margin: 8px 0 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            box-sizing: border-box;
+            transition: opacity 0.2s;
+        }
+        .btn:active {
+            opacity: 0.8;
+        }
+        .btn-tel {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .btn-kakao {
+            background-color: #fee500;
+            color: #3c1e1e;
+        }
+        .btn-map {
+            background-color: #3498db;
+            color: white;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
-    <img src="77.png" usemap="#image-map">
+    <div class="card-container">
+        <!-- 상단 브랜드 영역 -->
+        <div class="logo-box">
+            <h1>K.KCHI</h1>
+            <p>K.KCHI가 디자인합니다.</p>
+        </div>
 
-    <map name="image-map">
-        <area target="_blank" alt="카카오톡" title="카카오톡" href="https://open.kakao.com/o/svqF8CXi" coords="439,1172,487,1237" shape="rect">
-        <area target="_blank" alt="지도" title="지도" href="https://map.naver.com/p/entry/place/11623136?lng=127.7342621&lat=37.8792083&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202611191656%26locale%3Dko%26svcName%3Dmap_pcv5&entry=pll&searchType=place&c=15.00,0,0,0,dh" coords="692,1171,731,1233" shape="rect">
-        <area alt="전화" title="전화" href="tel:01049093255" coords="200,1179,242,1237" shape="rect">
-    </map>
+        <!-- 버튼 링크 영역 (전화, 카카오톡, 위치 등 필요에 맞게 수정하세요) -->
+        <a href="tel:010-0000-0000" class="btn btn-tel">📞 전화 문의하기</a>
+        <a href="https://open.kakao.com/o/xxxxxx" target="_blank" class="btn btn-kakao">💬 카카오톡 오픈채팅</a>
+        <a href="https://map.naver.com" target="_blank" class="btn btn-map">📍 오시는 길 (지도)</a>
+
+        <div class="footer">
+            © K.KCHI. All rights reserved.
+        </div>
+    </div>
 
 </body>
 </html>

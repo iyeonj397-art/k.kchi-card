@@ -1,50 +1,15 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K.KCHI가 디자인합니다.</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0d3827; /* 배경색 */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .card-container {
-            width: 100%;
-            max-width: 480px;
-            box-sizing: border-box;
-            position: relative;
-        }
-        .card-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    </style>
-</head>
-<body>
+<img src="77.png" usemap="#image-map">
 
-    <div class="card-container">
-        <!-- 명함 이미지 (77.png) -->
-        <img src="77.png" alt="K.KCHI 모바일 명함" usemap="#card-map">
+<map name="image-map">
+    <area target="_blank" alt="카카오톡" title="카카오톡"
+    href="https://open.kakao.com/o/svqF8CXi"
+    coords="439,1172,487,1237" shape="rect">
 
-        <!-- 아이콘 위치별 클릭 영역 설정 -->
-        <map name="card-map">
-            <!-- 1. 전화 아이콘 영역 (왼쪽 전화 그림) -->
-            <area shape="circle" coords="235,725,45" href="tel:010-0000-0000" alt="전화하기">
-            
-            <!-- 2. 톡 아이콘 영역 (가운데 말풍선 그림) -->
-            <area shape="circle" coords="500,725,45" href="https://open.kakao.com/o/xxxxxx" target="_blank" alt="카카오톡 오픈채팅">
-            
-            <!-- 3. 지도 아이콘 영역 (오른쪽 위치핀 그림) -->
-            <area shape="circle" coords="765,725,45" href="https://map.naver.com" target="_blank" alt="오시는 길 지도">
-        </map>
-    </div>
+    <area target="_blank" alt="지도" title="지도"
+    href="https://map.naver.com/p/entry/place/11623136?lng=127.7342621&lat=37.8792083&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202611191656%26locale%3Dko%26svcName%3Dmap_pcv5&entry=pll&searchType=place&c=15.00,0,0,0,dh"
+    coords="692,1171,731,1233" shape="rect">
 
-</body>
-</html>
+    <area alt="전화" title="전화"
+    href="tel:01049093255"
+    coords="200,1179,242,1237" shape="rect">
+</map>

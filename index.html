@@ -3,7 +3,8 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>K.Kchi</title>
 
 <style>
@@ -13,44 +14,65 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     position: relative;
-    width: 100%;
-    max-width: 930px;
-    margin: 0 auto;
+    width: min(100vw, calc(100svh * 930 / 1654));
+    aspect-ratio: 930 / 1654;
 }
 
 .card img {
-    display: block;
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
 }
 
+/* 임시 클릭 영역 확인용 */
 .card a {
     position: absolute;
     display: block;
     z-index: 10;
+    background: rgba(255, 0, 0, 0.08);
+    outline: 2px solid red;
+    cursor: pointer;
+    touch-action: manipulation;
 }
 
+/* 전화 */
 .phone {
-    left: 21.5%;
-    top: 71.28%;
-    width: 4.52%;
-    height: 3.51%;
+    left: 19.5%;
+    top: 70.2%;
+    width: 6.5%;
+    height: 5%;
 }
 
+/* 카카오톡 */
 .kakao {
-    left: 47.2%;
-    top: 70.86%;
-    width: 5.16%;
-    height: 3.93%;
+    left: 44.5%;
+    top: 69.8%;
+    width: 10%;
+    height: 5.2%;
 }
 
+/* 지도 */
 .map {
-    left: 74.4%;
-    top: 70.8%;
-    width: 4.19%;
-    height: 3.75%;
+    left: 72%;
+    top: 69.8%;
+    width: 9%;
+    height: 5.2%;
 }
 </style>
 </head>
@@ -59,7 +81,7 @@
 
 <div class="card">
 
-<img src="77.png" alt="K.Kchi 디자인 명함">
+<img src="77.png" alt="K.Kchi">
 
 <a class="phone"
 href="tel:01049093255"
@@ -68,11 +90,13 @@ aria-label="전화"></a>
 <a class="kakao"
 href="https://open.kakao.com/o/svqF8CXi"
 target="_blank"
+rel="noopener"
 aria-label="카카오톡"></a>
 
 <a class="map"
 href="https://map.naver.com/p/entry/place/11623136?lng=127.7342621&lat=37.8792083&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202611211540%26locale%3Dko%26svcName%3Dmap_pcv5&entry=pll&searchType=place&c=15.00,0,0,0,dh"
 target="_blank"
+rel="noopener"
 aria-label="지도"></a>
 
 </div>

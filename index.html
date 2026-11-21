@@ -3,89 +3,77 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>K.Kchi가 디자인합니다.</title>
-
-<meta property="og:title" content="K.Kchi가 디자인합니다.">
-<meta property="og:description" content="K.Kchi 모바일 디자인 명함">
-<meta property="og:type" content="website">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K.Kchi</title>
 
 <style>
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: #fff;
-}
-
-.container {
+.card {
     position: relative;
     width: 100%;
-    max-width: 100%;
+    max-width: 930px;
     margin: 0 auto;
 }
 
-.container img {
+.card img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.link {
+.card a {
     position: absolute;
     display: block;
     z-index: 10;
 }
 
-/* 카카오톡 */
-.kakao {
-    left: 45.73%;
-    top: 90.15%;
-    width: 5%;
-    height: 4.75%;
-}
-
-/* 네이버 지도 */
-.map {
-    left: 72.08%;
-    top: 90.08%;
-    width: 4.06%;
-    height: 4.53%;
-}
-
-/* 전화 */
 .phone {
-    left: 20.81%;
-    top: 90.69%;
-    width: 4.37%;
-    height: 4.23%;
+    left: 21.5%;
+    top: 71.28%;
+    width: 4.52%;
+    height: 3.51%;
+}
+
+.kakao {
+    left: 47.2%;
+    top: 70.86%;
+    width: 5.16%;
+    height: 3.93%;
+}
+
+.map {
+    left: 74.4%;
+    top: 70.8%;
+    width: 4.19%;
+    height: 3.75%;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-    <img src="77.png" alt="K.Kchi 디자인 모바일 명함">
+<img src="77.png" alt="K.Kchi 디자인 명함">
 
-    <a class="link kakao"
-       href="https://open.kakao.com/o/svqF8CXi"
-       target="_blank"
-       aria-label="카카오톡 문의"></a>
+<a class="phone"
+href="tel:01049093255"
+aria-label="전화"></a>
 
-    <a class="link map"
-       href="https://map.naver.com/p/entry/place/11623136?lng=127.7342621&lat=37.8792083"
-       target="_blank"
-       aria-label="네이버 지도"></a>
+<a class="kakao"
+href="https://open.kakao.com/o/svqF8CXi"
+target="_blank"
+aria-label="카카오톡"></a>
 
-    <a class="link phone"
-       href="tel:01049093255"
-       aria-label="전화 걸기"></a>
+<a class="map"
+href="https://map.naver.com/p/entry/place/11623136?lng=127.7342621&lat=37.8792083&placePath=%2Fhome%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202611211540%26locale%3Dko%26svcName%3Dmap_pcv5&entry=pll&searchType=place&c=15.00,0,0,0,dh"
+target="_blank"
+aria-label="지도"></a>
 
 </div>
 
